@@ -16,10 +16,7 @@ Route::get('/', function()
 	return View::make('index');
 });
 
-Route::get('/{author}', function($author){
-	$theAuthor = Author::whereUsername($author)->first();
-	return View::make('author.profile', ['theAuthor' => $theAuthor]);
-});
+Route::get('/{author}', 'AuthorController@show');
 
 
 // Route::get('/{username}', function($username){

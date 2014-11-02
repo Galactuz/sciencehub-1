@@ -2,10 +2,10 @@
 
 class AuthorController extends \BaseController {
 
-	public function show($username)
+	public function show($author)
 	{
-		$authorSelected = Author::whereUsername($username)->first();
-		return View::make('authors.show', ['authorSelected' => $author]);
+		$theAuthor = Author::whereUsername($author)->first();
+		return View::make('author.profile', ['theAuthor' => $theAuthor]);
 	}
 
 }
