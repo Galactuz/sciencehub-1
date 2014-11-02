@@ -16,7 +16,9 @@ Route::get('/', function()
 	return View::make('index');
 });
 
-Route::get('/{author}', 'AuthorController@show');
+Route::get('/{author}', function($author){
+	return View::make('author.profile', $author);
+});
 
 
 // Route::get('/{username}', function($username){

@@ -57,12 +57,11 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'sciencehub',
 			'username'  => 'root',
-			'password'  => 'root',
+			'password'  => '',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
-			'socket' 	=> '/Applications/MAMP/tmp/mysql/mysql.sock',
-			'port' 		=> '8889',
+			'port' 		=> '3306',
 		),
 
 		'pgsql' => array(
